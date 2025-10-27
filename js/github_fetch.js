@@ -1,5 +1,5 @@
 const spawn = document.getElementById('spawn');
-const own = 'star08-web-scuola';
+const own = 'Nicorho12';
 const api_url = `https://api.github.com/users/${own}/repos`;
 
 fetch(api_url)
