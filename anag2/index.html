@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Anagrafica Studente</title>
+</head>
+<body>
+    <h2>Inserisci i tuoi dati</h2>
+
+    <label>Nome: <input type="text" id="campoNome"></label><br>
+    <label>Cognome: <input type="text" id="campoCognome"></label><br>
+    <label>Data di nascita: <input type="date" id="campoDataNascita"></label><br>
+    <label>Indirizzo: <input type="text" id="campoIndirizzo"></label><br>
+    <label>Città: <input type="text" id="campoCitta"></label><br>
+    <label>CAP: <input type="text" id="campoCAP"></label><br>
+    <label>Provincia: <input type="text" id="campoProvincia"></label><br>
+
+    <p>Sesso:</p>
+    <label><input type="radio" name="campoSesso" value="Maschio">Maschio</label>
+    <label><input type="radio" name="campoSesso" value="Femmina">Femmina</label>
+    <label><input type="radio" name="campoSesso" value="Altro">Altro</label>
+
+    <p>Mezzi di locomozione posseduti:</p>
+    <label><input type="checkbox" name="campoMezzi" value="Auto">Auto</label>
+    <label><input type="checkbox" name="campoMezzi" value="Moto">Moto</label>
+    <label><input type="checkbox" name="campoMezzi" value="Bici">Bici</label>
+    <label><input type="checkbox" name="campoMezzi" value="Monopattino">Monopattino</label>
+
+    <p>Materia preferita:</p>
+    <select id="campoMateria">
+        <option value="Matematica">Matematica</option>
+        <option value="Storia">Storia</option>
+        <option value="Scienze">Scienze</option>
+        <option value="Informatica">Informatica</option>
+    </select>
+
+    <br><br>
+    <button onclick="generaProfilo()">Crea Anagrafica</button>
+
+    <hr>
+    <h3>Risultato:</h3>
+    <p id="outputNome"></p>
+    <p id="outputCognome"></p>
+    <p id="outputIndirizzo"></p>
+    <p id="outputCitta"></p>
+    <p id="outputCAP"></p>
+    <p id="outputData"></p>
+    <p id="outputSesso"></p>
+    <p id="outputProvincia"></p>
+    <p id="outputMezzi"></p>
+    <p id="outputMateria"></p>
+
+    <script src="script.js"></script>
+</body>
+</html>
