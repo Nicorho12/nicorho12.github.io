@@ -4,10 +4,10 @@
   <meta charset="UTF-8">
   <title>Generatore Numeri in Griglia Ordinata</title>
 
-  <style>
+ <style>
     body {
       font-family: Arial, sans-serif;
-      background: #f4f4f9;
+      background: linear-gradient(135deg, #f6d1ff, #c79bff);
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -18,7 +18,7 @@
     }
 
     button {
-      background: #007bff;
+      background: #b43cff;
       color: white;
       border: none;
       border-radius: 8px;
@@ -29,26 +29,28 @@
     }
 
     button:hover {
-      background: #0056b3;
+      background: #8b27d6;
       transform: scale(1.03);
     }
 
     h1 {
       margin-bottom: 20px;
+      color: #4a1e7a;
     }
 
     h2, h3 {
       margin-bottom: 5px;
+      color: #5a2d91;
     }
 
     #vettore, #griglia {
       display: grid;
-      grid-template-columns: repeat(10, 1fr); 
+      grid-template-columns: repeat(10, 1fr);
       gap: 6px;
       background: #ffffff;
       padding: 15px;
       border-radius: 12px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 2px 8px rgba(120, 20, 200, 0.2);
       margin-top: 10px;
       width: 90%;
       max-width: 900px;
@@ -57,43 +59,43 @@
       font-size: 14px;
       line-height: 1.8;
       word-wrap: break-word;
+      color: #4a1e7a;
     }
-
 
     #vettore span, #griglia span {
       display: inline-block;
       padding: 6px 8px;
-      border: 1px solid #ddd;
+      border: 1px solid #d7c4f7;
       border-radius: 6px;
-      background: #f0f4f8;
+      background: #f6eeff;
       transition: 0.2s;
     }
 
     #vettore span:hover, #griglia span:hover {
-      background: #dbe9ff;
+      background: #e7d1ff;
       transform: scale(1.05);
     }
 
-
     #vettore span.alta, #griglia span.alta {
-      background: #c8e6c9; 
-      border-color: #8bc34a;
+      background: #e2ffd9;
+      border-color: #78d65d;
     }
 
     #vettore span.negativo {
-      background: #ffccbc;
-      border-color: #ff5722;
+      background: #ffd6e5;
+      border-color: #ff4f8b;
     }
 
-    
     .stats {
-      background: #fff;
+      background: #ffffff;
       padding: 10px 20px;
       border-radius: 10px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      box-shadow: 0 2px 5px rgba(100, 0, 150, 0.15);
       margin-top: 15px;
+      color: #4a1e7a;
     }
-  </style>
+</style>
+
 </head>
 
 <body>
@@ -117,3 +119,4 @@
   <script src="codice.js"></script>
 </body>
 </html>
+
