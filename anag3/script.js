@@ -26,19 +26,19 @@ function stampa() {
         }
     }
 
-    let materie = [];
-    let selected = document.getElementById("materie").selectedOptions;
+    let mat = [];
+    let select = document.getElementById("materie").selectedOptions;
 
-    for (let i = 0; i < selected.length; i++) {
-        let opzione = selected[i];
-        materie.push(opzione.value);
+    for (let i = 0; i < select.length; i++) {
+        let option = select[i];
+        mat.push(option.value);
     }
 
-    let mezziPosseduti;
+    let posseduti;
     if (mezzi.length > 0) {
-        mezziPosseduti = mezzi.join(", ");
+        posseduti = mezzi.join(", ");
     } else {
-        mezziPosseduti = "Nessuno";
+        posseduti = "Nessuno";
     }
 
     let materiePreferite;
@@ -74,7 +74,7 @@ function stampa() {
         sesso: sesso,
         provincia: provincia,
         generazione: generazione,
-        mezziPosseduti: mezziPosseduti,
+        posseduti: posseduti,
         materiePreferite: materiePreferite,
 
         indirizzo: {
@@ -94,7 +94,8 @@ function stampa() {
     "<p><strong>Data di nascita:</strong> " + (persona.dataNascita || "Non indicata") + "</p>" +
     "<p><strong>Sesso:</strong> " + persona.sesso + "</p>" +
     "<p><strong>Provincia:</strong> " + persona.provincia + "</p>" +
-    "<p><strong>Mezzi posseduti:</strong> " + persona.mezziPosseduti + "</p>" +
+    "<p><strong>Mezzi posseduti:</strong> " + persona.posseduti + "</p>" +
     "<p><strong>Materie preferite:</strong> " + persona.materiePreferite + "</p>" +
     "<p><strong>Generazione:</strong> " + persona.generazione + "</p>";
 }
+
